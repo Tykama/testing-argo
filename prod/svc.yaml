@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: tony
+  name: my-svc1
+spec:
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: tony
+  type: NodePort
+status:
+  loadBalancer: {}
+
+#To be sent to your GitHub repo.
