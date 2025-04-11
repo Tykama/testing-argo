@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: tony
+  name: tony
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tony
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: tony
+    spec:
+      containers:
+      - image: nginx
+        name: kubenginx
+        resources: {}
+
+#To be sent to your GitHub repo.
