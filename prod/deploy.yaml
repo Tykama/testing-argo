@@ -18,7 +18,11 @@ spec:
     spec:
       containers:
       - image: nginx
+      #  image: tonyit1985/ngnix: 2.0.0
         name: kubenginx
+        ports:
+        - containerPort: 80
         resources: {}
 
 #To be sent to your GitHub repo.
+#Change the image name to your own image name.
